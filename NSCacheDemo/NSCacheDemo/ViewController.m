@@ -37,7 +37,6 @@
         UIImage *image = [UIImage imageNamed:@"1.png"];
         [self.cache setObject:image forKey:@(i) cost:10];
     }
-    
     // - 查看缓存内容，NSCache 没有提供遍历的方法，只支持用 key 来取值
     for (int i = 0; i < 20; ++i) {
         NSLog(@"缓存中----->%@", [self.cache objectForKey:@(i)]);
